@@ -1,0 +1,26 @@
+{
+  "name": "flightstats",
+  "version": "1.0.0",
+  "description": "\"a prospective FedEx program to incorporate flight lookup via an API.Option 1: Guest enters the flight # and date of departure and our system fills in the departure and arrival airports and times. Option 2: Guest enters the airport, dates and time (perhaps via a selection of ranges to capture any changes or inconsistencies) and our system fills in the correct flight #\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serve.js",
+    "dev": "nodemon serve.js"
+  },
+  "keywords": [
+    "flightstatus"
+  ],
+  "author": "Feng Ma @ SSSI",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "foundation-datepicker": "^1.5.6",
+    "nodemon": "^1.11.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.17"
+  }
+}

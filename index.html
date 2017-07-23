@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Status</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.min.js'></script>
+	<script src='https://unpkg.com/fuse.js@2.5.0/src/fuse.min.js'></script>
+	<script src='https://screenfeedcontent.blob.core.windows.net/html/airports.js'></script>
+
+	<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<script src="/scripts/application.js"></script>
+</head>
+<body>
+
+	<div id="page">
+		<div id="container" class="clearfix">
+
+		   <div class="row">
+		   		
+		   		<div class="columns large-6 large-centered">
+		   				
+		   				<h1 class="pink_title">Option 1</h1>
+
+		   				<form action="" method="post">
+		   					
+							
+							<div class="row">
+								
+								<div class="columns large-6">
+									Flight Number: <input type="text" id="carrier_flightnumber" name="carrier_flightnumber" value="">
+								</div>	
+								
+								<div class="columns large-6 fieldWrapper">
+									Flight Departing Date:<input  type="text" name="flightDate" id="datepickerField" placeholder="" value=""  class="datepickerField"> 
+								</div>
+							</div>		
+
+
+							<div class="row">
+							
+								<div class="columns large-6">
+									Departure Airport: <input  type="text" name="departureAirport" id="departureAirport" placeholder="" value="" > 
+								</div>
+
+								<div class="columns large-6">
+									Departure Time: <input  type="text" name="departureTime" id="departureTime" placeholder="" value="" > 
+								</div>
+								
+								<div class="columns large-6">
+									Arrival Airport: <input  type="text" name="arrivalAirport" id="arrivalAirport" placeholder="" value=""> 
+								</div>
+
+								<div class="columns large-6">
+									Arrival Time: <input  type="text" name="arrivalTime" id="arrivalTime" placeholder="" value=""> 
+								</div>
+
+							</div>	
+
+							
+							<div class="row">
+								<div class="columns large-6">	
+									<input type="submit" value="submit" name="" class="button buttong-primary">
+								</div>	
+							</div>	
+
+						</form>	
+
+		   		</div>
+
+		   		<div class="columns large-6 large-centered">
+		   				
+		   				<h1 class="pink_title">Option 2</h1>
+
+		   				<form action="" method="post">
+		   					
+							
+							<div class="row">
+								
+								<div class="columns large-6">
+									
+									Departure Airport: <input type="text" id="departure_airport" name="departure_airport" value="">
+
+								</div>	
+
+								<div class="columns large-6">
+									Arrival Airport: <input  type="text" name="arrival_airport" id="arrival_airport" placeholder="" value=""> 
+								</div>
+
+								<div class="columns large-6 fieldWrapper">
+									Flight Departing Date and Time:<input  type="text" name="flightDate" id="flightDate" placeholder="" value="" class="datepickerField"> 
+								</div>
+
+								<div class="columns large-6 end">
+									Flight Number: <input type="text" id="flightnumber" name="flightnumber" value="">
+								</div>	
+
+							</div>		
+
+							
+							<div class="row">
+								<div class="columns large-6">	
+									<input type="submit" value="submit" name="" class="button buttong-primary">
+								</div>	
+							</div>	
+
+						</form>	
+
+		   		</div>
+		   		
+
+		   </div>
+
+		   <div class="respone">
+		   	
+
+		   </div>
+			
+
+		</div>
+	</div>
+
+</body>
+</html>
