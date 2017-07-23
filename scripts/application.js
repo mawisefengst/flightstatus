@@ -174,7 +174,7 @@ function initResult(inputId,results){
      list.html(divs.join(''));
 
 	function clearResults() {
-	  ac.data("result",result);
+	  ac.data("result",results);
 	  results = [];
 	  numResults = 0;
 	  list.empty();
