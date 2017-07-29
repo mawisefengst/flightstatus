@@ -3,7 +3,8 @@ const app = express()
 const bodyParser = require('body-parser');
 var request = require('request');
 const path = require('path')
-
+const appId = "9e5c34ab";
+const appKey = "129dd1d62ed85119256fe5b414f1765b";
 var flight_api_uri = "https://api.flightstats.com/flex/schedules/rest/v1/json";
 var appendString = "?appId=" + appId + "&appKey=" + appKey;
 
@@ -20,7 +21,7 @@ app
       //res.render("allbuckets",{"local_buckets": getLocalBucket()});
     })
     .get("flightAPIByFlightNm",function(req,res,next){
-    	res.response("API ready");
+    	res.json({"test":"API ready"});
     })
     .post("flightAPIByFlightNm",function(req,res,next){
        //res.sendFile(__dirname + "/index.html");
