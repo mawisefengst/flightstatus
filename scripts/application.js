@@ -219,7 +219,7 @@ jQuery(document).ready(function($) {
 			};
 			$.ajax({
 			    type: "POST",
-			    url: "/flightAPIByFlightNm",
+			    url: "flightAPIByFlightNm",
 			    data: payload,
 			    dataType: "json"
 		    }).done(function(resp) {
@@ -253,7 +253,7 @@ jQuery(document).ready(function($) {
 			};
 			$.ajax({
 			    type: "POST",
-			    url: "/flightAPIByRoute",
+			    url: "flightAPIByRoute",
 			    data: payload,
 			    dataType: "json"
 		    }).done(function(resp) {
