@@ -20,10 +20,10 @@ app
        res.sendFile(__dirname + "/index.html");
       //res.render("allbuckets",{"local_buckets": getLocalBucket()});
     })
-    .get("flightAPIByFlightNm",function(req,res,next){
+    .get('/flightAPIByFlightNm',function(req,res,next){
     	res.json({"test":"API ready"});
     })
-    .post("flightAPIByFlightNm",function(req,res,next){
+    .post('/flightAPIByFlightNm',function(req,res,next){
        //res.sendFile(__dirname + "/index.html");
       //res.render("allbuckets",{"local_buckets": getLocalBucket()});
       var queryString = req.body;
@@ -60,7 +60,7 @@ app
 	  	res.json({"error":"Please enter correct info"});
 	  }
     })
-    .post("flightAPIByRoute",function(req,res,next){
+    .post("/flightAPIByRoute",function(req,res,next){
 		var queryString = req.body;
 		var day = queryString.day;
 		var month = queryString.month;

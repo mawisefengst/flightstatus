@@ -197,7 +197,7 @@ jQuery(document).ready(function($) {
 		// buttonImageOnly: true,
 		//dateFormat: "yy-mm-dd", // Format of date
 		showOn: "both",
-		buttonImage: "/images/calendar.png",
+		buttonImage: "images/calendar.png",
 		buttonImageOnly: true,
 		dateFormat: "mm/dd/yy", // Format of date
 		showAnim: "blind",	// goofy and wholly unnecessary special effects
